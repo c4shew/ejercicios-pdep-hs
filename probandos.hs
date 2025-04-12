@@ -11,4 +11,3 @@ edadDumbledore = 120
 
 pesosADolares :: Float -> Float
 pesosADolares pesos = pesos / 1075.22 
-
