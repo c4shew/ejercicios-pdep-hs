@@ -49,7 +49,7 @@ alturaDia2 = 283
 alturaDia3 :: Integer
 alturaDia3 = 294
 
-dispersion dia1 dia2 dia3 =
+-- persion dia1 dia2 dia3 =
 -- Estas 3 alturas ¿no se pueden representar como una lista?
 
 --función es cuadrado perfecto
@@ -58,9 +58,4 @@ dispersion dia1 dia2 dia3 =
 -- implementar la funcion es cuadrado perfecto
 -- si el numero ingresado es cuadrado perfecto
 -- la raiz cuadrada del numero debe ser un en
--- numero = otroNumero * otroNumero
-
---CuadradoPerfecto numero =
-
---calcula n
---ncionAuxiliar
+-- numero = otroNumero * otroNumero */
