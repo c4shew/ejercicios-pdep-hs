@@ -1,3 +1,4 @@
+import Text.Read.Lex (Number)
 
 -- función que devuelve True si un número es múltilpo de 3
 
@@ -40,14 +41,29 @@ sirvePino = esPesoUtil . pesoPino
 
 
 -- 10. Dispersión
-alturaDia1 :: Integer
-alturaDia1 = 322
+data Nivel = Nivel {
+            dia1 :: Int,
+            dia2 :: Int,
+            dia3 :: Int
+            } deriving (Show)
 
-alturaDia2 :: Integer
-alturaDia2 = 283
+rioParana :: Nivel
+rioParana = Nivel {
+    dia1 = 322,
+    dia2 = 283,
+    dia3 = 294
+} 
 
-alturaDia3 :: Integer
-alturaDia3 = 294
+
+nivelMaximo :: Nivel -> Int
+nivelMaximo (Nivel dia1 dia2 dia3) = maximum [dia1, dia2, dia3]
+
+
+nivelMinimo :: Nivel -> Int
+nivelMinimo (Nivel dia1 dia2 dia3) = minimum [dia1, dia2, dia3]
+
+dispersion :: Nivel -> Int
+dispersion nivel = nivelMaximo nivel - nivelMinimo nivel
 
 -- persion dia1 dia2 dia3 =
 -- Estas 3 alturas ¿no se pueden representar como una lista?
